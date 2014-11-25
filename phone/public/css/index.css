@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.login{
+	width:380px;
+	height:150px;
+	background-color: yellow;
+	margin: 0 auto;
+	margin-top: 200px;
+	margin-left:500px;
+}

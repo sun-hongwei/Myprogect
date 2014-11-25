@@ -1,0 +1,23 @@
+<html>
+<head>
+<TITLE>孙洪伟电话本管理系统</TITLE>
+<link rel="stylesheet" type="text/css" href="/css/show.css"/>
+</head>
+<body>
+<div class="show">
+<h1><center>您的联系人如下</center></h1>
+<table  width='500px' border="1px">
+<tr bgcolor="gray"><td>ID</td><td>姓名</td><td>电话</td><td>联系人关系</td><td>删除</td></tr>
+<?php foreach ($this->book as $res){ ?>
+<tr><td><?=$res['id']?></td><td><?=$res['姓名']?></td><td><?=$res['电话']?></td><td><?=$res['联系人关系']?></td><td><a href="/index/shanchu?id=<?=$res['id']?>">删除</a></td></tr>
+<?php }?>
+</table>
+<form action="" method="post">
+<table>
+<tr><td><font color="red">快速查询</font></td></tr>
+<tr><td><input type="text" name="姓名"></td><td><input type="submit" value="查询"></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>
